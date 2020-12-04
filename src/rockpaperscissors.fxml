@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="RockPaperScissors"
+            prefHeight="400.0" prefWidth="600.0">
+    <ImageView fitHeight="115.0" fitWidth="120.0" layoutX="240.0" layoutY="14.0" opacity="0.3"
+               pickOnBounds="true" preserveRatio="true">
+        <Image url="Images/Rock_Paper_Scissors-icon.png"/>
+    </ImageView>
+    <Text layoutX="249.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Text>
+    <Text layoutX="201.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Rock, Paper, Scissors!!">
+        <font>
+            <Font size="18.0"/>
+        </font>
+    </Text>
+    <Text layoutX="140.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0"
+          text="Choose your item:"/>
+    <Button layoutX="267.0" layoutY="145.0" mnemonicParsing="false" onAction="#Rockpaperscissors"
+            text="Rock" fx:id="rock"/>
+    <Button layoutX="324.0" layoutY="145.0" mnemonicParsing="false" onAction="#Rockpaperscissors"
+            text="Paper" fx:id="paper"/>
+    <Button layoutX="387.0" layoutY="145.0" mnemonicParsing="false" onAction="#Rockpaperscissors"
+            text="Scissors" fx:id="scissors"/>
+    <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="191.0" layoutY="236.0"
+               pickOnBounds="true" preserveRatio="true" fx:id="imageViewPlayer"/>
+    <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="309.0" layoutY="236.0"
+               pickOnBounds="true" preserveRatio="true" fx:id="imageViewComputer"/>
+    <Text layoutX="328.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Computer"/>
+    <Text layoutX="228.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You"/>
+    <Text layoutX="265" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" fx:id="text">
+        <font>
+            <Font size="14.0"/>
+        </font>
+    </Text>
+</AnchorPane>
